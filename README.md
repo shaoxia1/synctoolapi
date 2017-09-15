@@ -1,6 +1,7 @@
 #### １. 同步工具信息
 ##### １.获取本机同步工具信息 `/ping`
 请求方式：HTTP GET
+
 响应:
 - 格式: JSON/JSONP
 - JSON 内容:
@@ -15,6 +16,7 @@
 #### 2. 用户
 ##### 1. 登录 `/login`
 请求方式：HTTP POST
+
 参数：
 - email必须
 - password必须 
@@ -33,6 +35,7 @@
 
 ##### 2.退出 `/quit`
 请求方式：HTTP GET
+
 响应：
 - 格式: JSON/JSONP
 - JSON 内容:
@@ -46,6 +49,7 @@
 #### 3. 任务
 ##### 1.重启任务`/api/v1/worker/restart`
 请求方式：HTTP POST
+
 参数：
 -  job_id 需要重启的任务ID
  
@@ -61,6 +65,7 @@
 
 ##### 2.删除任务`/api/v1/worker/delete`
 请求方式：HTTP POST
+
 参数：
 -  job_id 需要删除的任务ID
  
@@ -76,6 +81,7 @@
 
 ##### 3.任务列表`/api/v1/worker/list`
 请求方式：HTTP GET
+
 响应：
 - 格式: JSON/JSONP
 - JSON 内容:
@@ -101,6 +107,7 @@
 #### 4. 上传下载任务
 ##### 1.上传任务`/api/v1/file/upload`
 请求方式：HTTP POST
+
 参数：
 - local_path: 要上传的本地文件 / 文件夹的路径
 - clould_path: 线上path > 目录
@@ -118,6 +125,7 @@
 
 ##### 2.下载任务`/api/v1/file/download`
 请求方式：HTTP POST
+
 参数：
 - local_path: 本地文件夹目录
 - clould_path: 线上文件 / 文件夹的路径　
@@ -136,6 +144,7 @@
 #### 5. 文件夹信息
 ##### 1.返回本地文件夹信息`/api/v1/info/localfiles`
 请求方式：HTTP POST
+
 参数：
 - prefix　本地目录
 
@@ -161,6 +170,7 @@
 
 ##### 2.返回oss文件夹信息`/api/v1/info/ossfiles`
 请求方式：HTTP POST
+
 参数：
 - prefix　线上目录
 
