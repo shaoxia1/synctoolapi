@@ -146,6 +146,37 @@
 }
 ```
 
+
+##### ３.删除本地文件`/api/v1/file/delete_local`
+请求方式：HTTP POST
+
+参数：
+- path: 路径
+
+响应：
+- 格式: JSON/JSONP
+- JSON 内容:
+```
+{
+    "success": true,
+}
+```
+
+##### ４.删除线上文件`/api/v1/file/delete_server`
+请求方式：HTTP POST
+
+参数：
+- path: 路径
+
+响应：
+- 格式: JSON/JSONP
+- JSON 内容:
+```
+{
+    "success": true,
+}
+```
+
 #### 5. 文件夹信息
 ##### 1.返回本地文件夹信息`/api/v1/info/localfiles`
 请求方式：HTTP POST
