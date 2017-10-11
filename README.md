@@ -4,7 +4,7 @@
 ### 在所有发往这个地址的请求中，带上 callback 参数即可支持 JSONP 响应，解决 Ajax 跨域的问题。
 
 #### １. 同步工具信息
-##### １.获取本机同步工具信息 `/ping`
+##### １.获取本机同步工具信息 `/capi/ping`
 请求方式：HTTP GET
 
 响应:
@@ -19,7 +19,7 @@
 ```
 
 #### 2. 用户
-##### 1. 登录 `/login`
+##### 1. 登录 `/capi/login`
 请求方式：HTTP POST
 
 参数：
@@ -38,7 +38,7 @@
 ```
 
 
-##### 2.退出 `/quit`
+##### 2.退出 `/capi/quit`
 请求方式：HTTP GET
 
 响应：
@@ -52,7 +52,7 @@
 ```
 
 #### 3. 任务
-##### 1.重启任务`/api/v1/worker/restart`
+##### 1.重启任务`/capi/v1/worker/restart`
 请求方式：HTTP POST
 
 参数：
@@ -68,7 +68,7 @@
 }
 ```
 
-##### 2.删除任务`/api/v1/worker/delete`
+##### 2.删除任务`/capi/v1/worker/delete`
 请求方式：HTTP POST
 
 参数：
@@ -84,7 +84,7 @@
 }
 ```
 
-##### 3.任务列表`/api/v1/worker/list`
+##### 3.任务列表`/capi/v1/worker/list`
 请求方式：HTTP GET
 
 响应：
@@ -110,7 +110,7 @@
 ```
 
 #### 4. 上传下载任务
-##### 1.上传任务`/api/v1/file/upload`
+##### 1.上传任务`/capi/v1/file/upload`
 请求方式：HTTP POST
 
 参数：
@@ -128,7 +128,7 @@
 }
 ```
 
-##### 2.下载任务`/api/v1/file/download`
+##### 2.下载任务`/capi/v1/file/download`
 请求方式：HTTP POST
 
 参数：
@@ -147,7 +147,7 @@
 ```
 
 
-##### ３.删除本地文件`/api/v1/file/delete_local`
+##### ３.删除本地文件`/capi/v1/file/delete_local`
 请求方式：HTTP POST
 
 参数：
@@ -162,7 +162,7 @@
 }
 ```
 
-##### ４.删除线上文件`/api/v1/file/delete_server`
+##### ４.删除线上文件`/capi/v1/file/delete_server`
 请求方式：HTTP POST
 
 参数：
@@ -178,7 +178,7 @@
 ```
 
 #### 5. 文件夹信息
-##### 1.返回本地文件夹信息`/api/v1/info/localfiles`
+##### 1.返回本地文件夹信息`/capi/v1/info/localfiles`
 请求方式：HTTP POST
 
 参数：
@@ -204,7 +204,7 @@
 }
 ```
 
-##### 2.返回oss文件夹信息`/api/v1/info/ossfiles`
+##### 2.返回oss文件夹信息`/capi/v1/info/ossfiles`
 请求方式：HTTP POST
 
 参数：
