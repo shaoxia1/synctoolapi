@@ -273,7 +273,7 @@
 ```
 
 #### 6. 项目信息
-##### 1.返回项目信息`/capi/v1/info/localfiles`
+##### 1.返回项目信息`/capi/v1/projects`
 请求方式：HTTP GET
 ```
 [
