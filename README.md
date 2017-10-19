@@ -51,6 +51,22 @@
 }
 ```
 
+##### 3.用户信息 `/capi/v1/user`
+请求方式：HTTP GET
+
+响应：
+- 格式: JSON/JSONP
+- JSON 内容:
+```
+{
+    "created_at": "2017-09-11 03:02:19",
+    "email": "admin@sikaifa.club",
+    "id": 1,
+    "name": "uc_admin",
+    "updated_at": "2017-09-11 03:02:19"
+}
+```
+
 #### 3. 任务
 ##### 1.重启任务`/capi/v1/worker/restart`
 请求方式：HTTP POST
@@ -194,12 +210,37 @@
 └── xie
 ```
 {
-    "folderinfo": {
-        "reg": "directory",
-        "test": "directory",
-        "test0.txt": "file",
-        "xie": "directory"
-    },
+    "folderinfo": [
+        "Documents and Settings",
+        "KwDownload",
+        "libpython",
+        "newwindows",
+        "PerfLogs",
+        "Program Files",
+        "Program Files (x86)",
+        "ProgramData",
+        "QMDownload",
+    ],
+    "fileinfo": [
+        {
+            "bootstrap.py": {
+                "mtime": 1495693399.321977,
+                "size": 1613
+            }
+        },
+        {
+            "swapfile.sys": {
+                "mtime": 1508223586.186817,
+                "size": 268435456
+            }
+        },
+        {
+            "tjh_lost_textures_finder.mel": {
+                "mtime": 1501742668.1077826,
+                "size": 240056
+            }
+        }
+    ],
     "success": true
 }
 ```
@@ -215,15 +256,44 @@
 - JSON 内容:
 ```
 {
-    "folderinfo": {
-        "index.html": "file",
-        "mel": "directory",
-        "nuke": "directory",
-        "python": "directory",
-        "style.css": "file",
-        "yeti": "directory"
-    },
+    "fileinfo": [
+        {
+            "LICENSE.txt": {
+                "mtime": 1507798213,
+                "size": 38591
+            }
+        }
+    ],
+    "folderinfo": [
+        "123",
+        "libpython"
+    ],
     "success": true
 }
 ```
 
+#### 6. 项目信息
+##### 1.返回项目信息`/capi/v1/info/localfiles`
+请求方式：HTTP GET
+```
+[
+    {
+        "created_at": "2017-10-11 03:33:16",
+        "creator": "admin",
+        "creator_id": 1,
+        "id": 1,
+        "name": "test1",
+        "task_count": 0,
+        "updated_at": "2017-10-11 03:33:16"
+    },
+    {
+        "created_at": "2017-10-11 03:33:16",
+        "creator": "admin",
+        "creator_id": 1,
+        "id": 2,
+        "name": "test2",
+        "task_count": 0,
+        "updated_at": "2017-10-11 03:33:16"
+    }
+]
+```
