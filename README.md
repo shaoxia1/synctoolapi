@@ -113,13 +113,30 @@
         {
             "detail": {
                 "args": "[1]",
-                "end_time": "2017-09-13T09:21:45.255662",
-                "start_time": "2017-09-13 15:45:19.117051"
+                "end_time": "2017-10-19T09:46:13.703000",
+                "start_time": "2017-10-17 12:18:18.078000"
             },
-            "state": "delete",
+            "state": "running",
             "title": "软件界面",
             "worker_id": "1",
             "worker_name": "web_ui"
+        },
+        {
+            "detail": {
+                "args": [
+                    "AirRender-Test/1/4/N/1234/1.test",
+                    "J:\\download\\1.test"
+                ],
+                "end_time": "",
+                "start_time": "2017-10-20 15:38:05.194000"
+            },
+            "local_path": "J:\\download\\1.test",
+            "oss_path": "AirRender-Test/1/4/N/1234/1.test",
+            "rate": "\r6% ",
+            "state": "running",
+            "title": "上传文件",
+            "worker_id": "3",
+            "worker_name": "upload"
         }
     ]
 }
