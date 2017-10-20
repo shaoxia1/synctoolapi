@@ -316,7 +316,7 @@
 ```
 
 #### 7. 地域
-##### 1.切换地域｀/capi/v1/endpoint/<endpoint>｀
+##### 1.切换地域｀/capi/v1/endpoint/{endpoint}｀
     
 参数：
 - endpoint　地域(如“sh”,"sz")
