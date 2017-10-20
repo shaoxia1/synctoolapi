@@ -314,3 +314,17 @@
     }
 ]
 ```
+
+#### 7. 地域
+##### 1.切换地域｀/capi/v1/endpoint/<endpoint>｀
+    
+参数：
+- endpoint　地域(如“sh”,"sz")
+
+请求方式：HTTP GET
+```
+{
+    "status": 200,
+    "success": true
+}
+```
