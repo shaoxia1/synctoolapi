@@ -84,7 +84,20 @@
 }
 ```
 
-##### 2.删除任务`/capi/v1/worker/delete`
+##### 2.重启所有错误任务`/capi/v1/worker/restartall`
+请求方式：HTTP GET
+
+响应：
+- 格式: JSON/JSONP
+- JSON 内容:
+```
+{
+    "status": 200,
+    "success": true
+}
+```
+
+##### ３.删除任务`/capi/v1/worker/delete`
 请求方式：HTTP POST
 
 参数：
@@ -100,7 +113,7 @@
 }
 ```
 
-##### 3.任务列表`/capi/v1/worker/list`
+##### ４.任务列表`/capi/v1/worker/list`
 请求方式：HTTP GET
 
 响应：
