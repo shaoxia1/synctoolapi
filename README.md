@@ -328,13 +328,31 @@
 ]
 ```
 
-#### 7. 地域
+#### 7. 切换
 ##### 1.切换地域｀/capi/v1/endpoint/{endpoint}｀
     
 参数：
 - endpoint　地域(如“sh”,"sz","bj")
 
 请求方式：HTTP GET
+响应：
+- 格式: JSON/JSONP
+- JSON 内容:
+```
+{
+    "status": 200,
+    "success": true
+}
+```
+##### 1.切换项目｀/capi/v1/local_project｀
+
+请求方式：HTTP POST
+
+参数：
+- prefix　线上目录(如“AirRender-Test/1/2","AirRender-Test/1/3")
+响应：
+- 格式: JSON/JSONP
+- JSON 内容:
 ```
 {
     "status": 200,
