@@ -350,6 +350,7 @@
 
 参数：
 - prefix　线上目录(如“AirRender-Test/1/2","AirRender-Test/1/3")
+
 响应：
 - 格式: JSON/JSONP
 - JSON 内容:
