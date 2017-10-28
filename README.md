@@ -302,6 +302,97 @@
 }
 ```
 
+##### 3.返回当前项目下所有文件夹信息`/capi/v1/info/ossfiles`
+请求方式：HTTP GET
+
+响应：
+- 格式: JSON/JSONP
+- JSON 内容:
+```
+{
+    "fileinfo": {
+        "": "file",
+        "J": {
+            "download": {
+                "3.test": "file"
+            },
+            "filetest": {
+                "deadline": {
+                    "other": {
+                        "112233": "file",
+                        "11111111": "file",
+                        "newfile1": "file"
+                    }
+                }
+            }
+        },
+        "M": {
+            "marine iguana": {
+                "ztl": {
+                    "alpha.ZTL": "file"
+                }
+            }
+        },
+        "S": {
+            "Users": {
+                "kun": {
+                    "airrender_test_proj": {
+                        "scenes": {
+                            "maya_2015_test.mb": "file",
+                            "maya_2016_test.mb": "file",
+                            "maya_2017_test.mb": "file",
+                            "maya_2018_test.mb": "file"
+                        }
+                    }
+                }
+            }
+        },
+        "output": {
+            "task_129": {
+                "maya_2015_test": {
+                    "masterLayer_0001.exr": "file",
+                    "masterLayer_0002.exr": "file"
+                }
+            },
+            "task_130": {
+                "maya_2016_test_0001.jpeg": "file",
+                "maya_2016_test_0002.jpeg": "file"
+            },
+            "task_131": {
+                "maya_2017_test.exr.0001": "file"
+            },
+            "task_132": {
+                "maya_2018_test": {
+                    "masterLayer": {
+                        "camera2_0001.png": "file",
+                        "camera2_0002.png": "file"
+                    }
+                }
+            },
+            "task_134": {
+                "maya_2018_test.exr.0001": "file",
+                "maya_2018_test.exr.0002": "file"
+            },
+            "task_135": {
+                "maya_2018_test": {
+                    "masterLayer": {
+                        "camera2_0001.png": "file",
+                        "camera2_0002.png": "file"
+                    }
+                }
+            },
+            "task_137": {
+                "maya_2015_test": {
+                    "masterLayer_0001.exr": "file",
+                }
+            }
+        }
+    },
+    "prefix": "AirRender-Test/1/35/",
+    "success": true
+}
+```
+
 #### 6. 项目信息
 ##### 1.返回项目信息`/capi/v1/projects`
 请求方式：HTTP GET
