@@ -280,8 +280,9 @@
 
 参数：
 - prefix　线上目录
+- all_files 可选参数 true or false （是否遍历目录下文件夹）
 
-响应：
+不遍历目录下文件夹响应：
 - 格式: JSON/JSONP
 - JSON 内容:
 ```
@@ -298,6 +299,32 @@
         "123",
         "libpython"
     ],
+    "success": true
+}
+```
+
+遍历目录下文件夹响应：
+- 格式: JSON/JSONP
+- JSON 内容:
+```
+{
+    "fileinfo": {
+        "J": {
+            "download": {
+                "3.test": "file"
+            },
+            "filetest": {
+                "deadline": {
+                    "other": {
+                        "112233": "file",
+                        "11111111": "file",
+                        "newfile1": "file"
+                    }
+                }
+            }
+        }
+    },
+    "prefix": "AirRender-Test/1/35/J",
     "success": true
 }
 ```
